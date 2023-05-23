@@ -1,1 +1,14 @@
 /* only here until Next.js page is done */
+body {
+    background-color: black;
+}
+
+.container {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: 80%;
+}

@@ -13,3 +13,9 @@ body {
     size: 80%;
     text-align: center;
 }
+
+h1,
+h2,
+p {
+    text-align: center;
+}

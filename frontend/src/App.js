@@ -1,11 +1,15 @@
 import AboutMe from './components/Elements/AboutMe';
+import Projects from './components/Elements/Projects';
 import './App.css';
+import Contact from './components/Elements/Contanct';
 
 function App() {
   return (
     <div className="App">
       <body>
         <AboutMe />
+        <Projects />
+        <Contact />
       </body>
     </div>
   );

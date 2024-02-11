@@ -8,7 +8,7 @@ class AboutMe extends React.Component {
     return (
       <div className="front-header">
         <img src={MainImage} alt="Jonas Kauker" />
-        <div className="front-header-content">
+        <div className="content">
           <h1>Jonas Kauker</h1>
           <p>Hello Fellas, i'm Jonas Kauker, 20 years old and i'm coding since 2020. I'm a professional Sea of Thieves Player. I'm coding as a hobby and want to work as a developer in the future.</p>
         </div>

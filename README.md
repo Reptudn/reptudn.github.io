@@ -1,7 +1,6 @@
 # My Portfolio Website
-written with React
 
-![tudn](./assets/tudn.jpg)
+![tudn](./frontend/assets/tudn.jpg)
 # About Me
 ## Introduction
 Hello Fellas, i'm Jonas Kauker, 20 years old and i'm coding since 2020. I'm a professional Sea of Thieves Player. I'm coding as a hobby and want to work as a developer in the future.

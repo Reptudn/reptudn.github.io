@@ -1,8 +1,8 @@
 import React from 'react';
 import MainImage from '../../assets/images/tudn.jpg';
-import './FrontHeader.css';
+import './AboutMe.css';
 
-class FrontHeader extends React.Component {
+class AboutMe extends React.Component {
 
   render() {
     return (
@@ -10,7 +10,7 @@ class FrontHeader extends React.Component {
         <img src={MainImage} alt="Jonas Kauker" />
         <div className="front-header-content">
           <h1>Jonas Kauker</h1>
-          <p>lorem ipsum dolor sit amongus</p>
+          <p>Hello Fellas, i'm Jonas Kauker, 20 years old and i'm coding since 2020. I'm a professional Sea of Thieves Player. I'm coding as a hobby and want to work as a developer in the future.</p>
         </div>
       </div>
     );
@@ -18,4 +18,4 @@ class FrontHeader extends React.Component {
 
 }
 
-export default FrontHeader;
+export default AboutMe;

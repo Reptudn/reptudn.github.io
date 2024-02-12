@@ -18,3 +18,6 @@ Back when i was young i always loved to build things with whatever i could find.
 E-Mail: jonas.kauker2003@gmail.com
 Phone: REDACTED
 
+<br>
+
+![sketch](./sketch/idea.png)

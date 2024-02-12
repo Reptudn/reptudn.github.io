@@ -3,11 +3,19 @@ import ProjectItem from './ProjectItem';
 
 class Projects extends React.Component {
     
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: []
+        };
+    }
+
     // TODO: Replace with actual fetch and create actual API to fetch from
     componentDidMount() {
         fetch('http://127.0.0.1:5000/api/projects')
             .then(response => response.json())
             .then(data => this.setState({ data }));
+        console.log(this.state)
     }
 
     render() {

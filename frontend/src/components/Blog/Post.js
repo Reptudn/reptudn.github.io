@@ -1,13 +1,15 @@
-class Post extends React.Component {
+import React from "react";
+
+function Post({ post }) {
   
   // Post
-
-  render() {
-        return (
-            <div class="blog-post">
-                <h1>{this.props.title}</h1>
-                <p>{this.props.content}</p>
-            </div>
-        );
-    }
+    return (
+        <div class="blog-post">
+            <h1>{post.title}</h1>
+            <p>{post.content}</p>
+            <p>{post.timestamp}</p>
+         </div>
+    );
 }
+
+export default Post;

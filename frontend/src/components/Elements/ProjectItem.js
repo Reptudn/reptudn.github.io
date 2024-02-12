@@ -7,7 +7,7 @@ function ProjectItem({ project }) {
         <div class="project-item">
             <h2>{project.name}</h2>
             <p>{project.description}</p>
-            <a href={project.url}>Link to project</a>
+            <a href={project.link}>Link to project</a>
         </div>
     );
 }

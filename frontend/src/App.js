@@ -6,17 +6,16 @@ import PostContainer from './components/Blog/PostContainer'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <body>
         <AboutMe />
-        <br />
         <Projects />
-        <br />
         <PostContainer />
-        <br />
-        <Contact />
       </body>
-    </div>
+      <footer>
+        <Contact />
+      </footer>
+    </>
   );
 }
 

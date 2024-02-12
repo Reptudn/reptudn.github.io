@@ -1,24 +1,33 @@
 .front-header {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-.front-header h1 {
-    font-size: 3em;
-    margin: 0;
+.front-header .content h1 {
+    font-size: 7em;
+    margin: 1em;
     padding: 0;
     flex: 1;
+    text-align: left;
+    font-family: 'Open Sans';
 }
 
-.front-header p {
-    font-size: 1em;
-    margin: 0;
+.front-header .content h2 {
+    margin: 2em;
+    text-align: left;
+    font-size: 3em;
     padding: 0;
-    flex: 2;
+    flex: 1;
+    font-family: 'Open Sans';
 }
 
 .front-header img {
-    width: 25%;
-    height: 25%;
+    width: 45%;
+    height: 85%;
     margin: 0 20px;
+    object-fit: cover;
 }

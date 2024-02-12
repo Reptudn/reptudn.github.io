@@ -5,7 +5,7 @@ class Projects extends React.Component {
     
     // TODO: Replace with actual fetch and create actual API to fetch from
     componentDidMount() {
-        fetch()
+        fetch('http://127.0.0.1:5000/api/projects')
             .then(response => response.json())
             .then(data => this.setState({ data }));
     }

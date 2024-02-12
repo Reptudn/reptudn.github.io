@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <body>
         <AboutMe />
+        <br />
         <Projects />
+        <br />
         <Contact />
       </body>
     </div>

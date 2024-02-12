@@ -8,5 +8,10 @@
 		"name": "minishell",
 		"description": "own shell with c",
 		"link": "https:/github.com/Reptudn/minishell"
+	},
+	{
+		"name": "philosophers",
+		"description": "multithreading",
+		"link": "https:/github.com/Reptudn/philosophers"
 	}
 ]

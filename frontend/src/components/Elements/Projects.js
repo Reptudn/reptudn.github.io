@@ -1,16 +1,23 @@
 import React from 'react';
+import ProjectItem from './ProjectItem';
 
 class Projects extends React.Component {
+    
+    // TODO: Replace with actual fetch and create actual API to fetch from
+    componentDidMount() {
+        fetch()
+            .then(response => response.json())
+            .then(data => this.setState({ data }));
+    }
+
     render() {
         return (
         <div class="projects">
             <h1>Projects</h1>
             <p>Here are some of my projects:</p>
-            <ul>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-            </ul>
+            <div class="project-container">
+                {this.state.data.map((project, index) => (<ProjectItem key={index} project={project} />))}
+            </div>
         </div>
         );
     }

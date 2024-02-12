@@ -5,9 +5,8 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(circle, transparent, black);
+    background: linear-gradient(circle, transparent, black);
     background-size: cover;
-    animation: fade-background 1s infinite ease-in-out;
 }
 
 @keyframes fade-background {
@@ -51,4 +50,14 @@
     height: 85%;
     margin: 0 20px;
     object-fit: cover;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fade-background 10s infinite;
 }

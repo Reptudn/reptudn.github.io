@@ -33,7 +33,7 @@ class PostContainer extends React.Component {
                 <div class="posts">
                     <h2>Posts</h2>
                     <div class="posts-container">
-                        {this.state.data.map((post, index) => <Post key={index} post={post}/>)}
+                        {this.state.data.map((post, index) => <Post key={index} post={post} target="_blank"/>)}
                     </div>
                 </div>
             );

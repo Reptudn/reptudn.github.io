@@ -13,5 +13,10 @@
 		"name": "philosophers",
 		"description": "multithreading",
 		"link": "https:/github.com/Reptudn/philosophers"
+	},
+	{
+		"name": "play",
+		"description": "schwaebisch hall",
+		"link": "https:/google.com/"
 	}
 ]

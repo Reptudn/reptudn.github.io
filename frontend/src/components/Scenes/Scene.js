@@ -4,6 +4,10 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 
+function toRadians(angle) {
+    return angle * (Math.PI / 180);
+}
+
 function Scene() {
     
     const canvasRef = useRef(null);  
@@ -43,13 +47,13 @@ function Scene() {
         // on update function
         const update = () => {
 
-            // const speed = 0.02;
-            // const angle = speed * performance.now() * speed;
-            // const radius = 30;
+            const speed = 0.02;
+            const angle = speed * performance.now() * speed;
+            const radius = 2;
 
-            // camera.position.x = Math.sin(angle) * radius;
-            // camera.position.z = Math.cos(angle) * radius;
-            // camera.lookAt(sphere.position);
+            camera.position.x = Math.sin(angle) * radius;
+            camera.position.z = Math.cos(angle) * radius;
+            camera.lookAt(sphere.position);
 
             sphere.rotation.x += 0.01;
             sphere.rotation.y += 0.01;
@@ -70,7 +74,7 @@ function Scene() {
         update();
 
         window.addEventListener('scroll', onScroll);
-        window.addEventListener('keypress', onKeyPress);
+        // window.addEventListener('keypress', onKeyPress);
         animationFrameId.current = window.requestAnimationFrame(update);
         return () => {
             window.removeEventListener('scroll', onScroll);

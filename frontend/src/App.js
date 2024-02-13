@@ -10,15 +10,15 @@ function App() {
     <>
       <body>
           <Scene />
-          {/* <div class="page-content"> */}
+          <div class="page-content" style={{display: "none"}}>
             <AboutMe />
             <Projects />
             <PostContainer />
-          {/* </div> */}
+          </div>
       </body>
-      <footer>
-        <Contact />
-      </footer>
+      {/* <footer>
+        <Contact style={{display: "none"}}/>
+      </footer> */}
     </>
   );
 }

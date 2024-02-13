@@ -10,7 +10,7 @@ class AboutMe extends React.Component {
         <img src={MainImage} alt="Jonas Kauker" />
         <div className="content">
           <h1>Jonas Kauker</h1>
-          <h2>Disco Time!</h2> {/* Replace this line with "I love <whatever i love>  This is supposed to change and has multiple options and it will animted in as if its being typed" */}
+          <h2>Box be rotating</h2> {/* Replace this line with "I love <whatever i love>  This is supposed to change and has multiple options and it will animted in as if its being typed" */}
         </div>
       </div>
     );

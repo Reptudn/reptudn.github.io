@@ -28,22 +28,26 @@
     }
 }
 
+.front-header {
+    text-align: right;
+}
+
 .front-header .content h1 {
     font-size: 7em;
     margin: 1em;
     padding: 0;
     flex: 1;
-    text-align: left;
     font-family: 'Open Sans';
+    color: blueviolet;
 }
 
 .front-header .content h2 {
-    text-align: left;
     font-size: 3em;
     margin: 2em;
     padding: 0;
     flex: 1;
     font-family: 'Open Sans';
+    color: blueviolet;
 }
 
 .front-header img {
@@ -51,4 +55,5 @@
     height: 85%;
     margin: 0 20px;
     object-fit: cover;
+    display: none;
 }

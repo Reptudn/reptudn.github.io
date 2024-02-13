@@ -9,10 +9,14 @@ function App() {
   return (
     <>
       <body>
-        <Scene />
-        <AboutMe />
-        <Projects />
-        <PostContainer />
+        <div class="container">
+          <Scene />
+          <div class="page-content">
+            <AboutMe />
+            <Projects />
+            <PostContainer />
+          </div>
+        </div>
       </body>
       <footer>
         <Contact />

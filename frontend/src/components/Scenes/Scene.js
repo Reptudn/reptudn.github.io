@@ -15,8 +15,9 @@ function Scene() {
         const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
 
+        const cubeTexture = new THREE.TextureLoader().load('./assets/textures/tudn.jpg');
         const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-        const cubeMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const cubeMaterial = new THREE.MeshBasicMaterial({ Map: cubeTexture });
         const Cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
 
         scene.add(Cube);
@@ -33,10 +34,18 @@ function Scene() {
             animationFrameId.current = window.requestAnimationFrame(update);
         };
 
+        const onScroll = () => {
+            camera.position.z = window.scrollY * 0.01 + 1.5;
+        }
+
         update();
 
+        window.addEventListener('scroll', onScroll);
         animationFrameId.current = window.requestAnimationFrame(update);
-        return () => window.cancelAnimationFrame(animationFrameId.current);
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+            window.cancelAnimationFrame(animationFrameId.current);
+        }
     }, []);
 
     return (

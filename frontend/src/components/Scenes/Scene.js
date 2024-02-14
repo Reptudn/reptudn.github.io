@@ -91,8 +91,8 @@ function Scene() {
         const onKeyPress = (e) => {
             if (window.started === false && e.key === "Enter") startExperience();
             else {
-                if (e.key === "a") window.spaceShip.rotation.z += 0.1;
-                if (e.key === "d") window.spaceShip.rotation.z -= 0.1;
+                //if (e.key === "a") window.spaceShip.rotation.z += 0.1;
+                //if (e.key === "d") window.spaceShip.rotation.z -= 0.1;
             }
         }
 

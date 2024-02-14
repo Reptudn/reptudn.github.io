@@ -10,7 +10,7 @@ function App() {
     <>
       <body>
           <Scene />
-          <div class="page-content" style={{display: "none"}}>
+          <div class="page-content">
             <AboutMe />
             <Projects />
             <PostContainer />

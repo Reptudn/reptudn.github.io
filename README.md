@@ -21,6 +21,10 @@ Phone: REDACTED
 <br>
 
 # IDEAS AND CONCEPS
-- i could make a three.js game where you can walk around and see things
-![sketch](./sketch/idea.png)
+## Page
+### Landing Page
+- just my "Jonas Kauker" and a button that says "About me"
+- upon clicking the "About Me"-Button the camera rotates towards the ship
+- when scrolling the spaceship moves and there are signs or planets or whatever where things are on about me
+
 [Scene Creator Website](https://threejs.org/editor/)

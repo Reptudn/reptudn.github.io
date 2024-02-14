@@ -1,16 +1,21 @@
 import React from 'react';
-import MainImage from '../../assets/images/jonas.JPG';
 import './AboutMe.css';
 
 class AboutMe extends React.Component {
 
+  handleClick = () => {
+    if (window.startExperience) window.startExperience();
+    else console.log("startScene not found");
+  }
+
   render() {
     return (
       <div className="front-header">
-        <img src={MainImage} alt="Jonas Kauker" />
         <div className="content">
-          <h1>Jonas Kauker</h1>
-          <h2>Box be rotating</h2> {/* Replace this line with "I love <whatever i love>  This is supposed to change and has multiple options and it will animted in as if its being typed" */}
+          <h1 class="noselect">Jonas Kauker</h1>
+          <button class="space-button" onClick={this.handleClick}>
+            <span>ABOUT ME</span>
+        </button>
         </div>
       </div>
     );

@@ -20,4 +20,7 @@ Phone: REDACTED
 
 <br>
 
+# IDEAS AND CONCEPS
+- i could make a three.js game where you can walk around and see things
 ![sketch](./sketch/idea.png)
+[Scene Creator Website](https://threejs.org/editor/)
